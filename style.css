@@ -3,12 +3,13 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
 }
 
-header{
+section{
   background-image:linear-gradient(to right,rgba(39, 193, 240, 0.959),rgba(228, 106, 156, 0.986));
-  height: 300vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
@@ -17,12 +18,15 @@ header{
   float: left;
   padding-left: 30px;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .nav{
-  height: 150px;
+  position:fixed;
+  height: 60px;
   width: 100%;
-  background-image:linear-gradient(rgba(219, 30, 172, 0.699),rgba(71, 13, 42, 0));
+  background-image:linear-gradient(rgba(228, 106, 157, 0.714),rgba(39, 193, 240, 0.429));
+  z-index: 111;
 }
 
 .nav ul{
@@ -41,17 +45,16 @@ header{
   color: #fff;
   padding: 5px 20px;
   border: 1px solid transparent;
-  border-radius: 6%;
   transition: 0.6s ease;
 }
 
 .nav ul li a:hover{
-  background-color: #fff;
+  background-color:rgba(254, 251, 253, 0.5);
   color: black;
 }
 
 .nav ul li.active a{
-  background-color: white;
+  background-color: rgba(254, 251, 253, 0.5);
   color: black;
 }
 
@@ -60,7 +63,6 @@ header{
   width: 500px;
   top: 50%;
   left: 5%;
-  transform: translate(-50,-50);
 }
 
 .info h1{
@@ -72,12 +74,6 @@ header{
   font-size: 15px;
 }
 
-footer{
-  background-image:linear-gradient(to bottom, hsla(0, 0%, 100%, 0.833),rgba(0, 0, 0,0.5));
-  background-size: cover;
-  height: 10vh;
-}
-
 .footer-last{
   display: flex;
   flex-direction: column;
@@ -86,9 +82,10 @@ footer{
 }
 
 .footer-last h4{
-  font-size: 15px;
+  position: relative;
+  font-size: 25px;
   font-weight: 400;
-  color: rgb(227, 153, 234);
+  color: rgb(234, 214, 235);
   margin-bottom: 8px;
 }
 
@@ -100,13 +97,14 @@ footer{
   display:block;
   background: transparent;
   color: #fff;
-  box-shadow: 5px 10px 25px rgb(250, 248, 248);
+  box-shadow: 0px 5px 25px rgb(250, 248, 248);
   border-radius: 50%; 
-  padding: 5px 10px;
-  margin: 1px 2px;
+  padding: 5px 8px;
+  margin: 5px 10px;
   transition: 0.5s ease;
 }
 
  .social a .fab{
  font-size: 20px;
 }
+
