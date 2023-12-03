@@ -1,5 +1,3 @@
-# yashas.github.io
-# Hi I'm yashas mr 
-# this site is in under development
-# will be ready soon...
-# Thank you for watching 
+#  This repository is maintained by YASHAS MR
+
+# !!! Educational purpore only !!!
